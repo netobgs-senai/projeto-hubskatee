@@ -1,0 +1,273 @@
+/* 1. Reset Global e Estilo do Corpo da Página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9; /* Cor de fundo da página */
+    color: #333333; /* Cor do texto geral */
+    padding: 20px;
+}
+
+/* 2. Estilizando o Cabeçalho (Header) */
+header {
+    background-color: #a90505; /* Vermelho escuro */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 2px; /* Arredonda as pontas */
+    margin-bottom: 30px;
+}
+
+/* 3. Estilizando a Citação (Blockquote) */
+blockquote {
+    background-color: #e2e8f0;
+    border-left: 6px solid #3498db; /* Linha azul na esquerda */
+    padding: 15px 20px;
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 0 8px 8px 0;
+}
+
+/* 4. Estilizando as Imagens */
+img {
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Cria uma sombra suave */
+    max-width: 100%; /* Torna a imagem responsiva */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* 5. Estilizando o Formulário */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db; /* Muda a borda ao clicar para digitar */
+}
+
+/* 6. Estilizando o Botão */
+button {
+    background-color: #ff1f01; /* Vermelho */
+    color: rgb(4, 3, 3);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Microinteração: Efeito ao passar o mouse */
+button:hover {
+    background-color: #ea5350; /* Verde mais claro */
+}
+
+/* 7. Estilos do Botão de Menu (Mobile) */
+#btn-menu {
+    background-color: transparent; /* Remove o fundo cinza padrão */
+    border: none; /* Remove a borda padrão do navegador */
+    color: rgb(0, 0, 0); /* Mantém a cor branca para contrastar com o header azul escuro */
+    font-size: 30px; /* Aumenta o tamanho do símbolo ☰ */
+    cursor: pointer; /* Transforma o mouse em "mãozinha" ao passar por cima */
+    margin-top: 10px;
+}
+
+/* 8. Classe de controle para o JavaScript */
+.menu-escondido {
+    display: none; /* Oculta a lista de links por padrão na tela pequena */
+}
+
+/* 9. Estilo da lista de links */
+.lista-links {
+    list-style: none; /* Remove as "bolinhas" padrão da lista */
+    margin-top: 15px;
+    padding: 0;
+    text-align: center; /* Centraliza os links no celular */
+}
+
+.lista-links li {
+    margin-bottom: 15px; /* Dá um respiro entre um link e outro */
+}
+
+.lista-links a {
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lista-links a:hover {
+    color: #020405; /* Muda a cor do link ao passar o mouse */
+
+}
+
+/* 10. REGRAS PARA TELAS GRANDES (A partir de 768px - Tablets e PCs) */
+@media (min-width: 768px) {
+   
+    /* 1. Transforma o cabeçalho para alinhar Logo na esquerda e Menu na direita */
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* 2. Esconde o botão hambúrguer, pois no PC ele não é necessário */
+    #btn-menu {
+        display: none;
+    }
+
+    /* 3. Força o menu a ficar sempre visível no PC (anula o bloqueio do JS) */
+    #navegacao {
+        display: block !important;
+    }
+
+    /* 4. Coloca os links um do lado do outro usando Flexbox */
+    .lista-links {
+        display: flex;
+        gap: 30px; /* Distância exata de 30px entre cada link */
+        margin-top: 0;
+    }
+}
+
+/* 11. Estilo do Botão de Tema */
+#btn-tema {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    width: auto;
+    margin-right: 0;
+}
+
+/* 12. A Classe Global do Tema Escuro (Inversão de Cores) */
+.tema-escuro {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+/* Força as tags filhas a herdarem a cor no tema escuro */
+.tema-escuro header, .tema-escuro form, .tema-escuro blockquote {
+    background-color: #333333;
+    color: #f4f4f4;
+    border-color: #555555;
+}
+/* BOTÃO DO TOPO
+/* 13. O Botão Flutuante (Position Fixed) */
+#btn-topo {
+    position: fixed; /* Congela na tela */
+    bottom: 30px;
+    width: auto;
+    right: 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    z-index: 999; /* Garante que ficará na frente de tudo */
+}
+
+/* Classe de controle para o JS esconder o botão do topo */
+.escondido {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* 14. A Barra de Progresso de Leitura */
+#barra-progresso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%; /* Inicia zerada, o JS vai aumentar esse valor */
+    height: 5px;
+    background-color: #e74c3c; /* Vermelho vivo para destacar */
+    z-index: 1000;
+}
+
+/* 15. Estilizando o Fundo do Modal */
+#fundo-modal {
+    position: fixed; /* Prende na tela inteira */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% da largura da tela */
+    height: 100vh; /* 100% da altura da tela */
+    background-color: rgba(0, 0, 0, 0.7); /* Preto com 70% de transparência */
+    z-index: 2000; /* Fica na frente de TODO o resto do site */
+   
+    /* Flexbox para centralizar a caixa branca perfeitamente no meio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 16. A Caixa Branca do Modal */
+.caixa-modal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px; /* Não deixa ficar gigante no PC */
+    text-align: center;
+    position: relative; /* Necessário para posicionar o X de fechar */
+}
+
+/* Garante que o Modal fique com cor correta mesmo se o Tema Escuro estiver ativo */
+.tema-escuro .caixa-modal {
+    background-color: #222222;
+    color: white;
+}
+
+/* 17. O Botão de Fechar (X) */
+#btn-fechar-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #e74c3c; /* Vermelho */
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* 18. Botão Genérico de Destaque */
+.btn-destaque {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: max-content;
+    display: block;
+    margin: 20px auto;
+}
+

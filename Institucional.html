@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>HUB Skate</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body> 
+    <!--COMEÇO DO CORPO DO SITE -->
+    <header class="cabecalho">
+        <button id="btn-tema" title="Mudar Tema">🌙</button>
+        <div id="barra-progresso"></div>
+        <h1>Venha conhecer o HUB Skate</h1>
+        <h2>Nossa Comunidade de skatistas</h2>
+        <div class="logo">HUB Skate</div>
+        
+
+    <!-- Botão visível apenas no Mobile -->
+    <button id="btn-menu" aria-label="Abrir Menu" aria-expanded="false">
+        ☰
+    </button>
+   
+    <nav id="navegacao" class="menu-escondido">
+        <ul class="lista-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+        </ul>
+    </nav>
+    </header>
+
+<!-- Bloco de Seção Baseado em Grid -->
+
+<section class="container mt-5 mb-5">
+
+ <!-- Linha de Cabeçalho da Seção -->
+<div class="row text-center mb-4">
+
+       <div class="col-12">
+
+          <h2 class="fw-bold">Catálogo de Serviços</h2>
+
+           <p class="text-muted">Implementação estrutural utilizando o sistema de grid do Bootstrap.</p>
+
+       </div>
+   </div>
+
+   <!-- Linha de Renderização dos Componentes -->
+
+   <div class="row">
+
+       <!-- Ponto de Quebra (Breakpoint): Ocupa 4 colunas em telas médias+ e 12 colunas em telas móveis -->
+
+       <div class="col-md-4 col-12 mb-3">
+
+           <!-- Estrutura do Componente Card -->
+
+<div class="card h-100 shadow-sm border-0">
+
+   <img src="https://acdn-us.mitiendanube.com/stores/001/118/420/products/img_8313-8ba031c8b949b34d3b17533254189203-1024-1024.webp" class="card-img-top" alt="Placeholder da imagem de serviço">
+
+   <div class="card-body">
+
+    <h5 class="card-title text-primary">Nomenclatura do Serviço</h5>
+
+       <p class="card-text">Descrição técnica do serviço oferecido. Este componente padroniza automaticamente a tipografia e o espaçamento interno.</p>
+
+   </div>
+
+   <div class="card-footer bg-white border-0 text-center">
+
+       <a href="#" class="btn btn-primary w-100">Consultar Detalhes</a>
+
+   </div>
+
+</div>
+
+
+       </div>
+
+
+       <div class="col-md-4 col-12 mb-3">
+
+          <!-- Estrutura do Componente Card -->
+
+<div class="card h-100 shadow-sm border-0">
+
+   <img src="https://www.xtreme-skate.com/8859-large_default/zero-shape-skate-single-skull-825-black.jpg" class="card-img-top" alt="Placeholder da imagem de serviço">
+
+   <div class="card-body">
+
+    <h5 class="card-title text-primary">Nomenclatura do Serviço</h5>
+
+       <p class="card-text">Descrição técnica do serviço oferecido. Este componente padroniza automaticamente a tipografia e o espaçamento interno.</p>
+
+   </div>
+
+   <div class="card-footer bg-white border-0 text-center">
+
+       <a href="#" class="btn btn-primary w-100">Consultar Detalhes</a>
+
+   </div>
+
+</div>
+
+
+       </div>
+
+
+
+       <div class="col-md-4 col-12 mb-3">
+
+      <!-- Estrutura do Componente Card -->
+
+<div class="card h-100 shadow-sm border-0">
+
+   <img src="https://www.xtreme-skate.com/8859-large_default/zero-shape-skate-single-skull-825-black.jpg"class="card-img-top" alt="Placeholder da imagem de serviço">
+
+   <div class="card-body">
+
+    <h5 class="card-title text-primary">Nomenclatura do Serviço</h5>
+
+       <p class="card-text">Descrição técnica do serviço oferecido. Este componente padroniza automaticamente a tipografia e o espaçamento interno.</p>
+
+   </div>
+
+   <div class="card-footer bg-white border-0 text-center">
+
+       <a href="#" class="btn btn-primary w-100">Consultar Detalhes</a>
+
+   </div>
+
+</div>
+
+
+       </div>
+
+   </div>
+
+   
+</section>
+
+    <blockquote>
+        "A vida me ensinou a nunca desistir. Nem ganhar,nem perder mas procurar evoluir."
+    </blockquote>
+
+    <p>O Hub Skate é <mark>uma comunidade para todos os skatistas</mark> no qual <small>valorizamos</small> 
+        todo começo e todo <strong>profissional</strong>, venha se juntar a essa comunidade!<br> 
+        Escrever formulas como H<sub>2</sub>0 ou numero ao quadrado como 10<sup>2</sup></p>
+ <hr>
+ <!-- Botão Padrão do Projeto -->
+<button class="btn btn-primary">Assinar Newsletter</button>
+<br>
+<!-- Botão Secundário (Apenas com contorno azul) -->
+<button class="btn btn-outline-primary">Saber Mais</button>
+
+<!-- Tabela Refatorada com Bootstrap -->
+<div class="table-responsive mt-4 mb-5">
+    <table class="table table-hover table-bordered align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Equipamento</th>
+                <th scope="col">Nível Indicado</th>
+                <th scope="col">Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Shape de Madeira Maple</td>
+                <td>Profissional</td>
+                <td><span class="badge bg-success">Em Estoque</span></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Rolamentos ABEC 7</td>
+                <td>Intermediário</td>
+                <td><span class="badge bg-warning text-dark">Poucas Unidades</span></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Capacete de Proteção</td>
+                <td>Iniciante</td>
+                <td><span class="badge bg-danger">Esgotado</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+   <!-- Lista Refatorada com Bootstrap -->
+<div class="mt-4 mb-5">
+    <h3 class="fw-bold mb-3">Nossas Categorias</h3>
+    <ul class="list-group">
+        <!-- O item com a classe 'active' fica destacado em azul -->
+        <li class="list-group-item active" aria-current="true">Shapes Nacionais</li>
+        <li class="list-group-item">Shapes Importados</li>
+        <li class="list-group-item">Rodinhas e Rolamentos</li>
+        <li class="list-group-item">Vestuário (Camisetas e Bonés)</li>
+        
+        <!-- Item desabilitado -->
+        <li class="list-group-item disabled" aria-disabled="true">Aulas Particulares (Vagas Esgotadas)</li>
+    </ul>
+</div>
+<br>
+    <h4>Nossas imagens:</h4>
+    <img src="C:\Users\alunoucj\Desktop\Web Design -\Imagens\hubskate01.jpg" class="img-fluid rounded" alt="Skate">
+    <h4>Nosso parceiro</h4>
+    <p>Segue o Link: <a href="https://cbskateshop.com.br/?srsltid=AfmBOool0MsOvKQfJ_wyXhKUkHf-Q-PolnSvKzJxXJFRecDPW9Of_QEn">CB Skate</a> </p>
+<img src=" https://centraldoskate.com/public/tim.php?q=75&w=750&h=500&zc=1&src=https://centraldoskate.s3.amazonaws.com/places/23a946b107e236e616e659b81a3d0c02_688fbb39da71a.jpg" class="img-fluid rounded" alt="Skate">
+   
+    <br>
+    <hr>
+<br>
+
+    <form class="mt-4">
+    <div class="mb-3">
+        <label for="nome" class="form-label fw-bold">Seu Nome:</label>
+        <!-- A classe form-control faz a mágica acontecer -->
+        <input type="text" id="nome" class="form-control" placeholder="Digite seu nome completo...">
+    </div>
+    
+    <div class="mb-3">
+        <label for="email" class="form-label fw-bold">Seu E-mail:</label>
+        <input type="email" id="email" class="form-control" placeholder="contato@skate.com">
+    </div>
+
+    <div class="mb-3">
+        <label for="telefone" class="form-label fw-bold">Seu Telefone:</label>
+        <input type="phone" id="phone" class="form-control" placeholder="(79) 99886-0953">
+    </div>
+
+    <div class="mb-3">
+        <label for="date" class="form-label fw-bold">Data de Nascimento:</label>
+        <input type="date" id="datanascimento" class="form-control" placeholder="14/02/2007">
+    </div>
+
+    <!-- Botão do Formulário (Ocupando 100% da largura) -->
+<button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+</form>
+
+
+<!-- Seção de FAQ (Acordeão) -->
+<section class="container mt-5 mb-5">
+    <h3 class="text-center fw-bold mb-4">Perguntas Frequentes</h3>
+    
+    <div class="accordion" id="faqSkate">
+        
+        <!-- Pergunta 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta1">
+                    Quem pode participar do Hub Skate?
+                </button>
+            </h2>
+            <div id="pergunta1" class="accordion-collapse collapse show" data-bs-parent="#faqSkate">
+                <div class="accordion-body">
+                    Todos! Desde iniciantes que nunca subiram em um shape até profissionais experientes. Nossa comunidade abraça todos os níveis.
+                </div>
+            </div>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta2">
+                    Vocês ensinam manobras?
+                </button>
+            </h2>
+            <div id="pergunta2" class="accordion-collapse collapse" data-bs-parent="#faqSkate">
+                <div class="accordion-body">
+                    Sim! Temos encontros semanais onde skatistas mais experientes ajudam a galera nova a mandar o primeiro Ollie ou Kickflip.
+                </div>
+            </div>
+        </div>
+
+         <!-- Pergunta 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta3">
+                    Como faço para me juntar a equipe HUB Skate?
+                </button>
+            </h2>
+            <div id="pergunta3" class="accordion-collapse collapse" data-bs-parent="#faqSkate">
+                <div class="accordion-body">
+                    Basta enviar o seu curriculo pelo nosso email do RH: rhhubskate@gmail.com
+                </div>
+            </div>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta4">
+                    Qual o prazo de entrega dos produtos do HUB Skate?
+                </button>
+            </h2>
+            <div id="pergunta4" class="accordion-collapse collapse" data-bs-parent="#faqSkate">
+                <div class="accordion-body">
+                    Nossos produtos tem o prazo de no maximo 10 dias para ser entrega até a sua casa!
+                </div>
+            </div>
+        </div>
+
+         <!-- Pergunta 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta5">
+                    Quais são dias de treino na Pista de Skate?
+                </button>
+            </h2>
+            <div id="pergunta5" class="accordion-collapse collapse" data-bs-parent="#faqSkate">
+                <div class="accordion-body">
+                    Damos treinamento todas as Terças e Quinta-Feira!
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Fundo Escuro do Modal -->
+<div id="fundo-modal" class="escondido">
+    <!-- A Caixa do Modal em si -->
+    <div class="caixa-modal">
+        <button id="btn-fechar-modal">✖</button>
+        <h2>Fique por dentro!</h2>
+        <p>Assine nossa newsletter para receber as melhores novidades do projeto diretamente no seu e-mail.</p>
+        <!-- Um mini-formulário só de enfeite por enquanto -->
+        <input type="email" placeholder="Digite seu melhor e-mail...">
+        <button class="btn-destaque">Inscrever-se</button>
+    </div>
+</div>
+
+    <button id="btn-topo" class="escondido">⬆️ Topo</button>
+
+ <script src="script.js"></script>
+ <!-- JavaScript do Bootstrap (necessário para componentes interativos) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
